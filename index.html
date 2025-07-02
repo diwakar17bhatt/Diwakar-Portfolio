@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <title>Diwakar Bhatt</title>
+</head>
+<body id="root" class=" m-0 p-0 text-white bg-[#111111] sm:overflow-hidden overflow-x-hidden">
+    <main id="contact" class=" fixed inset-0 items-center justify-around flex z-10 transition-all duration-300 scale-75 opacity-0 sm:scale-95 pointer-events-none">
+        <div id="contact-box" class="relative bg-gray-800 m-2 rounded-2xl p-3 flex flex-col gap-3 py-10  items-center z-10 w-fit">
+                <div class="flex flex-col gap-5">
+                    <i id="h-contact" class="fa-solid fa-xmark absolute top-4 right-4 cursor-pointer"></i>
+                    <h1  class="font-bold text-xl">Contact Me</h1>
+                    <p>Have a project in mind or just want to say hi? I'd love to hear from you.</p>
+                    <form onsubmit="sendEmail(event)" class="flex flex-col gap-4 lg:flex lg:flex-col lg:items-center items-center">
+                        <div class="flex flex-col gap-1 w-full">
+                            <input class="border  placeholder:text-sm border-black rounded-xl px-3 py-2 outline-none focus:border-blue-500" type="text" id="name" name="name" placeholder="Full Name" required>
+                        </div>
+                        <div class="flex flex-col gap-1 w-full">
+                            <input class="border  placeholder:text-sm border-black rounded-xl px-3 py-2 outline-none focus:border-blue-500" type="email" id="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="flex flex-col gap-1 w-full">
+                            <input class="border  placeholder:text-sm border-black rounded-xl px-3 py-2 outline-none focus:border-blue-500" type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="flex flex-col gap-1 w-full">
+                            <textarea class="border  placeholder:text-sm border-black rounded-xl px-3 py-2 outline-none focus:border-blue-500 resize-none h-32 " name="message" id="message" placeholder="Message" required></textarea>
+                        </div>
+                        <button type="submit" class=" bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded-xl transition-all duration-200 cursor-pointer w-[50%]"> Send </button>
+                    </form>
+                </div>
+        </div>
+    </main>
+
+    <main id="hero" class="flex flex-col sm:flex-row">
+        <section class="sm:fixed z-20 sm:h-screen w-screen sm:w-[40%] sm:p-14 py-20 pt-16 sm:pt-14 rounded-xl flex flex-col sm:overflow-hidden sm:scale-100 items-center">
+            <div class="  flex flex-col gap-6 items-center sm:items-start">
+                <div class="flex flex-col items-center sm:items-start">
+                    <img src="images/profile.jpg" class="h-20 w-20 sm:h-30 sm:w-30 rounded-full shadow-sm" alt="Profile Image">
+                    <div class="mt-4 text-center sm:text-start">
+                        <h1 class="font-bold text-4xl">Diwakar Bhatt</h1>
+                        <p class="">Frontend Web Developer</p>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center flex-col  sm:items-start">
+                    <p class="text-sm text-center sm:text-start"><i class="fa-solid fa-globe pr-2 text-green-600"></i>Uttarakhand, India</p>
+                    <p class="text-sm text-center sm:text-start ">Exploring real-world projects and developing skills</p>
+                </div>
+                <ul class="flex gap-4 mt-1 justify-center sm:justify-start text-lg">
+                    <li class="flex items-center justify-center"><a href="resume/Diwakar - Resume.docx" download class="flex gap-1 text-sm border px-3 py-1 rounded-full hover:bg-green-100 transition items-center"><i class="fa-solid fa-file-arrow-down text-green-600 pr-2"></i> Resume</a></li>
+                    <li><a target="_blank" href="mailto:diwakar0d6@gmail.com" class="hover:text-green-600"><i class="fa-solid fa-envelope"></i></a></li>
+                    <li><a href="https://github.com/diwakar17bhatt" target="_blank" class="hover:text-green-600"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/diwakarbhatt17/" target="_blank" class="hover:text-green-600"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+                <button id="c-button" class="bg-gray-300 text-black rounded-3xl cursor-pointer w-fit h-fit sm:px-4 sm:py-2 text-xs px-3 py-1">Contact Me</button>
+                
+            </div>
+            
+        </section>
+        
+        <div id="inmod" class="z-20 absolute sm:fixed top-2 right-4 bg-white h-5 w-10 rounded-full flex items-center justify-start px-1 transition-all duration-300 cursor-pointer mt-2">
+                    <button id="outmod" class="bg-[#111111] h-3 w-3 rounded-full transform transition-transform duration-300 cursor-pointer "></button>
+                </div>
+        <section class="sm:absolute m-0 sm:h-screen w-screen sm:w-[60%] sm:overflow-hidden right-0 sm:p-0  pb-10 sm:pb-0  ">
+            <div class="h-full w-[100%] sm:overflow-y-auto  custom-scrollbar sm:p-14 px-6">
+                <div class="overflow-x-hidden">
+                    <p class="font-bold text-2xl">About Me</p>
+                    <p class="mt-5 text-sm">
+                         Hi! I'm a 17 year old third-year B.Tech Computer Science student at Birla Institute of Applied Sciences, Bhimtal, with a growing passion for web development and digital design focusing on building responsive, intuitive, and engaging web interfaces.
+                        <br><br>
+                        I love transforming ideas into real, whether it's a clean landing page or a complete interactive website. I aim to write efficient, maintainable code and stay updated with modern development trends as I work toward becoming a full-stack developer.
+                        <br><br>
+                        When I'm not coding, I enjoy exploring new tech tools and learning how great design meets functionality and I also have some interest in photography, video editing, graphic designing, and writing.
+                    </p>
+                </div>  
+                <div class="mt-10">
+                    <p class="font-bold text-2xl">Skills</p>
+                    <p class="mt-3 font-semibold">Frontend</p>
+                    <ul class="flex gap-3 mt-2">
+                        <li class="bg-green-400 text-green-800 text-xs rounded-2xl px-3 h-6 w-fit flex items-center">HTML5</li>
+                        <li class="bg-green-400 text-green-800 text-xs rounded-2xl px-3 h-6 w-fit flex items-center">CSS</li>
+                        <li class="bg-green-400 text-green-800 text-xs rounded-2xl px-3 h-6 w-fit flex items-center">JavaScript</li>
+                    </ul>
+                    <p class="mt-3 font-semibold">Framework</p>
+                    <ul class="flex gap-3 mt-2">
+                        <li class="bg-red-400 text-red-800 rounded-2xl px-3 flex items-center text-xs h-6 w-fit">Tailwind CSS</li>
+                        <li class="bg-red-400 text-red-800 rounded-2xl px-3 flex items-center text-xs h-6 w-fit">React JS</li>
+                        <li class="bg-red-400 text-red-800 rounded-2xl px-3 flex items-center text-xs h-6 w-fit">JavaScript</li>
+                    </ul>
+                    <p class="mt-3 font-semibold">Languages</p>
+                    <ul class="flex gap-3 mt-2">
+                        <li class="bg-blue-400 text-blue-800 rounded-2xl px-3 text-xs h-6 w-14 flex items-center justify-center">C</li>
+                        <li class="bg-blue-400 text-blue-800 rounded-2xl px-3 flex items-center text-xs h-6 w-fit">C++</li>
+                        <li class="bg-blue-400 text-blue-800 rounded-2xl px-3 flex items-center text-xs h-6 w-fit">Python</li>
+                        <li class="bg-blue-400 text-blue-800 rounded-2xl px-3 flex items-center text-xs h-6 w-fit">Java</li>
+                        <li class="bg-blue-400 text-blue-800 rounded-2xl px-3 flex items-center text-xs h-6 w-fit">JavaScript</li>
+                    </ul>
+                    <p class="mt-3 font-semibold">Tools</p>
+                    <ul class="flex gap-3 mt-2">
+                        <li class="bg-yellow-400 text-yellow-800 rounded-2xl px-3 flex items-center text-xs h-6 w-fit">VS Code</li>
+                        <li class="bg-yellow-400 text-yellow-800 rounded-2xl px-3 flex items-center text-xs h-6 w-fit">Intellij IDEA</li>
+                        <li class="bg-yellow-400 text-yellow-800 rounded-2xl px-3 flex items-center text-xs h-6 w-fit">Git</li>
+                    </ul>
+                </div>
+                <div class="mt-10">
+                    <p class="font-bold text-2xl">Education</p>
+                    
+                    <div class="flex flex-col mt-6 gap-5">
+                        <div class="flex">
+                           <div class="relative flex items-stretch">
+                                <div class="absolute left-0 top-0 bottom-0 bg-[#3f3f3f] w-[2px] mr-5"></div>
+                                <div class="pl-6 flex items-center justify-evenly w-full">
+                                    <img src="images/bias.jpg" alt="" class="h-20 w-20 rounded-full"> 
+                                    <div class="pl-5 flex flex-col justify-evenly">
+                                        <p>Bachelor of Technology in Computer Science and Engineering   </p>
+                                        <p class="text-sm">Birla Institute of Applied Sciences, Bhimtal</p>
+                                        <p class="text-xs">Aug 2023 - Present</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="relative flex items-stretch">
+                                <div class="bg-[#3f3f3f] w-[2px] mr-5 absolute left-0 top-0 bottom-0"></div>
+                                <div class="pl-6 flex items-center w-fit">
+                                    <img src="images/doon.png" alt="" class="h-20 w-20 rounded-full">
+                                    <div class="pl-5 flex flex-col justify-evenly">
+                                        <p>Senior Secondary Education</p>
+                                        <p class="text-sm">Doon Public School, Haldwani</p>
+                                        <p class="text-xs">Year of Passing: 2023</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="relative flex items-stretch">
+                                <div class="bg-[#3f3f3f] w-[2px] mr-5 absolute left-0 top-0 bottom-0"></div>
+                                <div class="pl-6 flex items-center w-fit">
+                                    <img src="images/mallikarjun.png" alt="" class="h-20 w-20 rounded-full bg-cover bg-center ">
+                                    <div class="pl-5 flex flex-col justify-evenly">
+                                        <p>Secondary Education</p>
+                                        <p class="text-sm">Mallikarjun School, Pithoragarh</p>
+                                        <p class="text-xs">Year of Passing: 2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-10">
+                    
+                    <p class="font-bold text-2xl">Experience</p>
+                    <div class="flex flex-col mt-6 gap-5">
+                       
+                        <div class="flex">
+                            <div class="relative flex items-stretch">
+                                <div class="bg-[#3f3f3f] self-stretch w-[2px] mr-5 absolute left-0 top-0 bottom-0"></div>
+                                <div class="flex flex-col w-fit pl-6">
+                                    <div class="flex">
+                                        <img src="images/codsoft.jpg" alt="" class="h-20 w-20 rounded-full bg-cover bg-center">
+                                        <div class="pl-5 flex flex-col justify-evenly">
+                                            <p class="font-semibold">Frontend - Intern (Remote)</p>
+                                            <p class="text-sm">CodSoft, India</p>
+                                            <p class="text-xs">July 2024 - Aug 2024</p>
+                                        </div>
+                                    </div>
+                                    <div class="mt-5">
+                                        <ul class="text-sm flex flex-col gap-3">
+                                            <li>•	Developed responsive web interfaces using HTML, Tailwind CSS, CSS, JavaScript, and React.js.</li>
+                                            <li>•	Created a Landing Page with modern UI elements and smooth scroll animations to improve user engagement.</li>
+                                            <li>•	Designed and built a personal Portfolio Website showcasing projects and skills using component-based architecture in React.</li>
+                                            <li>•	Applied best practices in UI/UX and responsive design to ensure cross-device compatibility.</li>
+                                            <li>•	Gained hands-on experience with version control using Git and GitHub.</li>
+                                        
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-10">
+                    
+                    <p class="font-bold text-2xl">Projects</p>
+                    <div class="flex flex-col mt-6 gap-5">
+                       
+                        <div class="flex ">
+                            <div class="relative flex items-stretch">
+                                <div class="bg-[#3f3f3f] self-stretch w-[2px] mr-5 absolute left-0 top-0 bottom-0"></div>
+                                <div class="flex flex-col w-full pl-6">
+                                    <div class="flex flex-col">
+                                        <h1 class="font-semibold text-xl">Payment-Hub: </h1>
+                                        <div class="mt-3">
+                                            <video class="sm:w-[70%] w-[100&] pr-6 sm:pr-0"
+                                                src="video/paymentsite.mp4" controls controlsList="nodownload" >
+                                            </video>
+                                        </div>
+                                    </div>
+                                    <div class="mt-5">
+                                        <ul class="text-sm flex flex-col gap-3">
+                                            <li><strong>Purpose:</strong> A user-friendly and interactive landing page with a login page, specifically designed for payment-related websites.</li>
+                                            <li>• Crafted with clean layouts and intuitive navigation to enhance user experience.</li>
+                                            <li>• Sleek and professional UI elements including cards, input fields, and modals—styled using custom CSS for smooth transitions and animations.</li>
+                                            <li>• Easy to integrate into any front-end project for testing payment flow UX.</li>
+                                            <li>• Built with a modular approach, making it easy to integrate into any front-end project requiring a simulated payment flow.</li>
+                                            <li><strong>Github Repo: </strong><a target="_blank" class="text-blue-500" href="https://github.com/diwakar17bhatt/Payment-Hub.git">Payment-Hub</a></li>
+                                            <div class="flex flex-wrap gap-3">
+                                                <span class="bg-green-400 text-green-800 text-xs rounded-2xl px-3 h-6 w-fit flex items-center">HTML5</span>
+                                                <span class="bg-green-400 text-green-800 text-xs rounded-2xl px-3 h-6 w-fit flex items-center">CSS</span>
+                                                <span class="bg-green-400 text-green-800 text-xs rounded-2xl px-3 h-6 w-fit flex items-center">Tailwind CSS</span>
+                                                <span class="bg-green-400 text-green-800 text-xs rounded-2xl px-3 h-6 w-fit flex items-center">JavaScript</span>
+                                            </div>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex mt-10">
+                            <div class="relative flex items-stretch">
+                                <div class="bg-[#3f3f3f] self-stretch w-[2px]  absolute left-0 top-0 bottom-0"></div>
+                                <div class="flex flex-col pl-6">
+                                    <div class="flex flex-col">
+                                        <h1 class="font-semibold text-xl">Landing Page: </h1>
+                                        <div class="mt-3">
+                                            <video class="sm:w-[70%] w-[100&] pr-6 sm:pr-0"
+                                                src="video/reactlandingpage.mp4" controls controlsList="nodownload" >
+                                            </video>
+                                        </div>
+                                    </div>
+                                    <div class="mt-5">
+                                        <ul class="text-sm flex flex-col gap-3">
+                                            <li><strong>Purpose:</strong> To showcase a clean, modern, and fully responsive landing page built using React and Tailwind CSS, with a focus on component reusability and scalable design architecture.</li>
+                                            <li>• Built with modular React components to ensure clean code organization, easy maintenance, and reusability across different parts of the application.</li>
+                                            <li>• Organized into modular React components for reusability and maintainability.</li>
+                                            <li>• Easy to extend or customize for personal portfolios, startup landing pages, or SaaS product intros.</li>
+                                            <li><strong>Github Repo: </strong><a target="_blank" class="text-blue-500" href="https://github.com/diwakar17bhatt/Landing-Page-Using-React.git">Landing Page Using React</a></li>
+                                            <div class="flex flex-wrap gap-3 mt-4">
+                                                <span class="bg-red-200 text-red-800 text-xs rounded-2xl px-3 h-6 w-fit flex items-center">HTML5</span>
+                                                <span class="bg-red-200 text-red-800 text-xs rounded-2xl px-3 h-6 w-fit flex items-center">CSS</span>
+                                                <span class="bg-red-200 text-red-800 text-xs rounded-2xl px-3 h-6 w-fit flex items-center">Tailwind CSS</span>
+                                                <span class="bg-red-200 text-red-800 text-xs rounded-2xl px-3 h-6 w-fit flex items-center">JavaScript</span>
+                                                <span class="bg-red-200 text-red-800 text-xs rounded-2xl px-3 h-6 w-fit flex items-center">React JS</span>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "LKbUfci_nPDQu_UnG",
+      });
+   })();
+</script>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
