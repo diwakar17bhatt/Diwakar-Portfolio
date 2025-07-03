@@ -12,3 +12,12 @@
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
     cursor: pointer;
 }
+
+/* input.css or a <style> block */
+.scrollbar-hidden {
+  scrollbar-width: none;        /* Firefox */
+  -ms-overflow-style: none;     /* Internet Explorer 10+ */
+}
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;                /* Chrome, Safari, Opera */
+}

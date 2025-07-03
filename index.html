@@ -10,10 +10,12 @@
 
     <title>Diwakar Bhatt</title>
 </head>
+
 <body id="root" class=" m-0 p-0 text-white bg-[#111111] sm:overflow-hidden overflow-x-hidden">
-    <main id="contact" class=" fixed inset-0 items-center justify-around flex z-10 transition-all duration-300 scale-75 opacity-0 sm:scale-95 pointer-events-none">
+
+    <main id="contact" class="fixed z-30 inset-0 items-center justify-around flex transition-all duration-200 opacity-0 sm:scale-95 pointer-events-none">
         <div id="contact-box" class="relative bg-gray-800 m-2 rounded-2xl p-3 flex flex-col gap-3 py-10  items-center z-10 w-fit">
-                <div class="flex flex-col gap-5">
+                <div class="flex flex-col gap-5 h-96 sm:h-full">
                     <i id="h-contact" class="fa-solid fa-xmark absolute top-4 right-4 cursor-pointer"></i>
                     <h1  class="font-bold text-xl">Contact Me</h1>
                     <p>Have a project in mind or just want to say hi? I'd love to hear from you.</p>
@@ -28,7 +30,7 @@
                             <input class="border  placeholder:text-sm border-black rounded-xl px-3 py-2 outline-none focus:border-blue-500" type="text" id="subject" name="subject" placeholder="Subject" required>
                         </div>
                         <div class="flex flex-col gap-1 w-full">
-                            <textarea class="border  placeholder:text-sm border-black rounded-xl px-3 py-2 outline-none focus:border-blue-500 resize-none h-32 " name="message" id="message" placeholder="Message" required></textarea>
+                            <textarea class="border  placeholder:text-sm border-black rounded-xl px-3 py-2 outline-none focus:border-blue-500 resize-none sm:h-32 " name="message" id="message" placeholder="Message" required></textarea>
                         </div>
                         <button type="submit" class=" bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded-xl transition-all duration-200 cursor-pointer w-[50%]"> Send </button>
                     </form>
@@ -37,11 +39,11 @@
     </main>
 
     <main id="hero" class="flex flex-col sm:flex-row">
-        <section class="sm:fixed z-20 sm:h-screen w-screen sm:w-[40%] sm:p-14 py-20 pt-16 sm:pt-14 rounded-xl flex flex-col sm:overflow-hidden sm:scale-100 items-center">
-            <div class="  flex flex-col gap-6 items-center sm:items-start">
+        <section class=" sm:fixed z-20 sm:h-screen w-screen sm:w-[40%] flex flex-col sm:scale-100 items-center sm:overflow-y-hidden overflow-x-hidden scrollbar-hidden::-webkit-scrollbar">
+            <div class=" flex flex-col gap-6 items-center sm:items-start overflow-y-scroll p-14 sm:pr-5 scrollbar-hidden">
                 <div class="flex flex-col items-center sm:items-start">
                     <img src="images/profile.jpg" class="h-20 w-20 sm:h-30 sm:w-30 rounded-full shadow-sm" alt="Profile Image">
-                    <div class="mt-4 text-center sm:text-start">
+                    <div class="mt-4 text-center sm:text-start ">
                         <h1 class="font-bold text-4xl">Diwakar Bhatt</h1>
                         <p class="">Frontend Web Developer</p>
                     </div>
