@@ -83,7 +83,9 @@ function sendEmail(e) {
         .then(() => alert("Your message has been sent"))
         .catch((err) => alert("Failed to send message. Please try again."));
 
-   
+    contact.classList.remove("opacity-100", "sm:scale-100");
+    contact.classList.add("opacity-0", "sm:scale-95", "pointer-events-none");
+    hero.classList.remove("opacity-50")
     document.getElementById("name").value = "";
     document.getElementById("email").value = "";
     document.getElementById("subject").value = "";
